@@ -1,0 +1,36 @@
+:root {
+  --main-color: #0050FF;
+}
+.input-area {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.input-area input[type="checkbox"].hidden {
+  position: absolute;
+  display: block;
+  top: -1px;
+  left: -1px;
+  z-index: -1;
+  overflow: hidden;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+}
+.input-area input[type="checkbox"]:checked + .btn {
+  background: url('./check-solid.svg') no-repeat center;
+  background-size: 60%;
+}
+.input-area label.btn {
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+}
+.input-area label.desc {
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 6px;
+}
