@@ -4,6 +4,7 @@
   justify-content: flex-start;
   align-items: center;
 }
+
 .input-area input[type="checkbox"].hidden {
   position: absolute;
   display: block;
@@ -15,10 +16,12 @@
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
 }
+
 .input-area input[type="checkbox"]:checked + .btn {
   background: url('./check-solid.svg') no-repeat center;
   background-size: 60%;
 }
+
 .input-area label.btn {
   background: transparent;
   border: 1px solid #000;
@@ -26,6 +29,7 @@
   width: 20px;
   height: 20px;
 }
+
 .input-area label.desc {
   font-size: 18px;
   font-weight: 400;
